@@ -104,6 +104,7 @@ celerybeat.pid
 # Environments
 .env
 .venv
+.venv_hackerrank
 env/
 venv/
 ENV/
