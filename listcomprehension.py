@@ -2,7 +2,15 @@ x = 1
 y = 1
 z = 1
 n = 2
+"""
+s = sum([x,y,z])
 
+r = s*n
+
+lst = [[] for _ in range(r+1)]
+
+ilist = [[n]for n in range(x+1) for _ in range_list(round(r/2)-1) ]
+"""
 
 s = sum([x,y,z])
 
@@ -10,15 +18,9 @@ r = s*n
 
 def range_list(rr):
     
-    lst = []
-    for _ in range(rr+1):
-        lst.append([])
-    
+    lst = [[] for _ in range(rr+1)]
+     
     return lst
-
-def lst_of_lst():
-    
-        pass
 
 def i(x):
     ilist = []
