@@ -6,6 +6,10 @@ Input :-
 
 n = 5
 arr = 2 3 6 6 5
+
+Condition:
+2 <= n <=10
+-100 <= a[i] <=100
 """
 
 
@@ -16,12 +20,17 @@ if __name__ == '__main__':
     
 if n > 1 and n<11:
     
-    a = list(arr)
-    #a.sort()
-    z = max(a)
-    v = 0
-    for b in a:
-        if b > v and b < z :
-            v = b
+    l = list(arr) # Convert MAP into List --------> [2, 3, 6, 6, 5]
+    l.sort(reverse=True) # Sort the list in reverse order ==> Desc -----------> [6, 6, 5, 3, 2]
+    a = l[0] # First element of the list. which will be the max number in list. ----------> [6]
     
-    print(v)
+    c = 0
+    for b in l:
+        if b > -101 and b < 101:
+            if b ==a:
+                pass
+            elif b !=a:
+                c = b
+                break
+    
+    print(c) # second highest number in list --------------> 5
